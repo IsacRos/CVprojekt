@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400&display=swap" rel="stylesheet">
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+    <div id="print" class="full">
+        <div class="imgBox">
+            <img src="imgs\CVfoto-6.jpg" alt="" />
+        </div>
+        <div class="sideCol">
+            <div class="sideCol-content">
+                <!-- <div class="sideCol-header"><h3>Personal traits</h3></div> -->
+                <div class="header-bg-sidecol">
+                    <div class="body-header-text-sidecol">
+                        <h4>Personal traits</h4>
+                    </div>
+                </div>
+                <div class="traits">
+                    <ul class="trait-col">
+                        <li class="trait-tag">Fast learner</li>
+                        <li class="trait-tag">Solutionist</li>
+                        <li class="trait-tag">Charismatic</li>
+                    </ul>
+                    <ul class="trait-col">
+                        <li class="trait-tag">Self-driven</li>
+                        <li class="trait-tag">Stress resistant</li>
+                        <li class="trait-tag">Adaptable</li>
+                    </ul>
+                </div>
+                <div class="header-bg-sidecol">
+                    <div class="body-header-text-sidecol">
+                        <h4>Competence</h4>
+                    </div>
+                </div>
+                <div class="traits">
+                    <ul class="trait-col">
+                        <li class="trait-tag">Networking</li>
+                        <li class="trait-tag">Project management</li>
+                        <li class="trait-tag">Client communication</li>
+                    </ul><ul class="trait-col">
+                        <li class="trait-tag">Problem solving</li>
+                        <li class="trait-tag">Budget responsibility</li>
+                        <li class="trait-tag">Event organizing</li>
+                    </ul>
+                </div>
+                <div class="header-bg-sidecol">
+                    <div class="body-header-text-sidecol">
+                        <h4>Fluency</h4>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div style="margin-top: 8px;" class="skill-header">Organic languages</div>
+                    <div class="skill">
+                        <div>Swedish</div>
+                        <div class="skill-bg">
+                            <div style="width: 95%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>English</div>
+                        <div class="skill-bg">
+                            <div style="width: 85%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>Spanish</div>
+                        <div class="skill-bg">
+                            <div style="width: 60%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill-header">Digital languages & Frameworks</div>
+                    <div class="skill">
+                        <div>C#</div>
+                        <div class="skill-bg">
+                            <div style="width: 80%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>HTML/CSS</div>
+                        <div class="skill-bg">
+                            <div style="width: 70%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>Javascript</div>
+                        <div class="skill-bg">
+                            <div style="width: 60%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>C</div>
+                        <div class="skill-bg">
+                            <div style="width: 30%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>SQL</div>
+                        <div class="skill-bg">
+                            <div style="width: 70%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>Python</div>
+                        <div class="skill-bg">
+                            <div style="width: 40%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>Angular</div>
+                        <div class="skill-bg">
+                            <div style="width: 50%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>React</div>
+                        <div class="skill-bg">
+                            <div style="width: 70%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>Django</div>
+                        <div class="skill-bg">
+                            <div style="width: 25%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div>Flask</div>
+                        <div class="skill-bg">
+                            <div style="width: 35%;" class="skill-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header">
+            <span class="underline"></span>
+            <div class="header-text">
+                <h1>Isac Arvidsson Rosenberg</h1>
+                <div class="under-header">
+                    <h2>Fullstack Developer</h2>
+                    <span class="midline"></span>
+                    <p class="uh-text">
+                        contact: <br />
+                        +34 657 258 340 <br />
+                        +46 737 64 86 51 <br />
+                        isac.a.rosenberg@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="header-bg">
+                <div class="body-header-text">
+                    <h3>Personal profile</h3>
+                </div>
+                <div class="grad"></div>
+            </div>
+            <div class="body-text">
+                <p>
+                    As a highly motivated and cheerful individual, I am engaged in ongoing training and
+                    education in web development and seek an internship opportunity in this field. My versatile
+                    background
+                    encompasses project management, sales, restaurant management, logistics, and music production,
+                    demonstrating my adaptability, rapid learning, and adept stress management. These diverse
+                    experiences have refined my proficiency in communication, interpersonal relations, and meticulous
+                    attention to detail. I firmly believe that every challenge can be overcome and my commitment is to
+                    achieve the best results, emphasizing excellence over personal pride.
+                </p>
+            </div>
+            <div class="header-bg">
+                <div class="body-header-text">
+                    <h3>Work experience</h3>
+                </div>
+                <div class="grad"></div>
+            </div>
+            <div class="body-text">
+                <h5>2022.01 - 2023.1 | Development of a climbing gym, Málaga, Spain</h5>
+                Led the comprehensive development and pre-launch for a climbing gym project.
+                <h5>2014 - 2024 | Audio Engineering and music production, Freelance</h5>
+                Freelancing work in everything around recording, mixing and live performance.
+                <h5>2019.09 - 2020.05 | Real estate agent, Spain - SkandiaMäklarna Fuengirola</h5>
+                One of the leading offices in property sales on the costa del sol.
+                <h5>2018.09 - 2019.04 | Restaurant manager, “&bar Best Western &hotel”</h5>
+                Hotel bar in the center of Stockholm City.
+                <h5>2016.05 - 2018.09 | Bartender, waiter, maitre d'</h5>
+                Bar and restaurant work in Stockholm and in south east asian countries.
+                <h5>2015.02 - 2016.02 | Project manager, Erema Entreprenad, Stockholm</h5>
+                Family business in landscaping. I did project planning, client meetings and sales, as well as handling staff.
+                <h5>2010.09 - 2014.04 | Sales and project management, Bauhaus Länna, Stockholm</h5>
+                Started as a salesman in Bauhaus and quickly advanced to project management for
+                bathroom renovations.
+            </div>
+            <div style="margin-top: 15px;" class="header-bg">
+                <div class="body-header-text">
+                    <h3>Education</h3>
+                </div>
+                <div id="education" class="grad"></div>
+            </div>
+            <div style="color: #F2F2F2" class="body-text">
+                <p><strong>2023.09-2025 | </strong>Dotnet-developer - IT-Högskolan, Stockholm</p>
+                <p><strong>2023.01-2023.04 | </strong>CS50, introduction to computer science - Harvard</p>
+                <p><strong>2012.09 - 2014.03 | </strong>Audio engineering & production - SAE Institute, Stockholm</p>
+                <p><strong>2005.08 - 2008.05 | </strong>Film production - Mediagymnasiet, Stockholm</p>
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    <!-- <script>
+        window.jsPDF = window.jspdf.jsPDF;
+        document.addEventListener('DOMContentLoaded', function() {
+        var element = document.getElementById('print');
+            html2canvas(element, {scale: 4}).then(function(canvas) {
+                var pdf = new jsPDF();
+
+                pdf.addImage(canvas.toDataURL("image/png"), 'PNG', 0, 0, 210, 297);
+
+                pdf.save('IsacAR_CV_2024.pdf');
+            });
+        });
+    </script> -->
+</body>
+
+</html>

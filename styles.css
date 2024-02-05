@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: 'Source Sans 3';
+    font-size: 14px;
+    color: #260801;
+    /* overflow: hidden; */
+}
+
+.full {
+    background: #F2F2F2;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: -2;
+    /* border: 3px solid #260801 */
+}
+
+.header {
+    background: #260801;
+    height: 20%;
+    z-index: 1;
+    justify-content: start;
+    display: flex;
+}
+
+.header-text {
+    color: #F2F2F2;
+    padding-left: 30px;
+    margin-top: -10px;
+}
+
+.underline {
+    height: 1px;
+    background: #F2F2F2;
+    width: 100%;
+    position: absolute;
+    top: 115px
+}
+
+.midline {
+    width: 1px;
+    background: #F2F2F2;
+    position: absolute;
+    left: 255px;
+    top: 6px;
+    height: 110px;
+}
+
+.under-header {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    position: relative;
+    padding-top: 5px;
+    align-items: center;
+}
+
+.footer {
+    width: 700px;
+    height: 205px;
+    background: #837773;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    border-top-right-radius: 100cqb;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 100;
+    padding-top: 17px;
+    font-family: 'M PLUS 1 Code', monospace;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: 150;
+    font-family: 'M PLUS 1 Code', monospace;
+    font-style: italic;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 150;
+    font-family: 'M PLUS 1 Code', monospace;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: 150;
+    font-family: 'M PLUS 1 Code', monospace;
+    font-style: italic;
+}
+
+h5 {
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #260801;
+}
+
+.header-bg {
+    background: #516673c2;
+    height: 28px;
+    width: 400px;
+    position: relative;
+    border-bottom-right-radius: 60%;
+    border-top-left-radius: 30%;
+    z-index: 3;
+}
+
+.header-bg-sidecol {
+    background: linear-gradient(to left, #260801 0, #260801 150px, transparent 290px);
+    height: 25px;
+    width: 100%;
+    position: relative;
+    border-bottom-left-radius: 60%;
+    border-top-right-radius: 30%;
+    margin-right: 0;
+    margin-bottom: -5px;
+    margin-top: -5px;
+}
+
+.grad {
+    background: linear-gradient(to right, transparent 0px, transparent 250px, #F2F2F2 403px);
+    height: 35px;
+    width: 403px;
+    position: absolute;
+    margin-top: -1px;
+}
+
+#education {
+    background: linear-gradient(to right, transparent 0px, transparent 250px, #837773 403px);
+  
+    
+}
+
+.body-header-text {
+    display: flex;
+    color: #F2F2F2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: left;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.body-header-text-sidecol {
+    display: flex;
+    color: #F2F2F2;
+    position: absolute;
+    width: 260px;
+    height: 100%;
+    justify-content: end;
+    align-items: center;  
+    margin-top: -1px;   
+}
+
+
+.body-text {
+    width: 470px;
+    padding-left: 20px;    
+}
+
+.uh-text {
+    font-size: 14px;
+    font-weight: 150;
+    /* font-style: italic; */
+}
+
+.body {
+    /* background: #F2F2F2; */
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+}
+
+.imgBox {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-right: 20px;
+}
+
+img {
+    width: 30%;
+    border-radius: 5px;
+    transform: scaleX(-1);
+    border: 1px solid #F2F2F2;
+}
+
+.sideCol {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.sideCol-content {
+    background: #516673c2;
+    position: absolute;
+    width: 290px;
+    z-index: 3;
+    border-top-left-radius: 120px;
+    top: 115px;
+    bottom: 0;
+    padding-top: 300px;
+    border-top: 2px solid #F2F2F2;
+    border-left: 2px solid #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sideCol-header{
+    margin-bottom: -5px;
+    color: #F2F2F2;
+}
+
+.traits {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+.trait-tag {
+    font-size: 14px;
+    font-family: 'PT Sans';
+    font-weight: 500;
+    color: #F2F2F2;
+    margin-left: -30px;
+    margin-bottom: 5px;
+}
+
+.trait-col {
+    width: 100%;
+}
+.t-indent {
+    display: inline-block;
+    text-indent: 40px;
+}
+
+.skills {
+    width: 85%; 
+    padding-top: 5px;   
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #F2F2F2;
+    margin-bottom: 6px;
+}
+
+.skill-bg {
+    background-color: #F2F2F2;
+    width: 150px;
+    height: 10px;
+    position: relative;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.skill-fill {
+    background-color: #260801;
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.skill-header {
+    color: #F2F2F2;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-family: 'M PLUS 1 Code', monospace;
+    text-align: end;
+}
+
+/* Color Theme Swatches in Hex */
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-1-hex { color: #F2F2F2; }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-2-hex { color: #516673; }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-3-hex { color: #593527; }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-4-hex { color: #8C5C4A; }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-5-hex { color: #260801; }
+
+/* Color Theme Swatches in RGBA */
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-1-rgba { color: rgba(242, 242, 242, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-2-rgba { color: rgba(81, 101, 114, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-3-rgba { color: rgba(89, 52, 39, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-4-rgba { color: rgba(140, 91, 74, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-5-rgba { color: rgba(38, 7, 0, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-1-hsla { color: hsla(0, 0, 95, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-2-hsla { color: hsla(202, 16, 38, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-3-hsla { color: hsla(16, 38, 25, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-4-hsla { color: hsla(16, 30, 42, 1); }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-5-hsla { color: hsla(11, 96, 7, 1); }
