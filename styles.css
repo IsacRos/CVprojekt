@@ -112,6 +112,10 @@ h5 {
     z-index: 3;
 }
 
+#education-bg {
+    background: #260801;
+}
+
 .header-bg-sidecol {
     background: linear-gradient(to left, #260801 0, #260801 150px, transparent 290px);
     height: 25px;
@@ -120,8 +124,8 @@ h5 {
     border-bottom-left-radius: 60%;
     border-top-right-radius: 30%;
     margin-right: 0;
-    margin-bottom: -5px;
-    margin-top: -5px;
+    margin-bottom: -8px;
+    margin-top: -8px;
 }
 
 .grad {
@@ -255,12 +259,12 @@ img {
     justify-content: space-between;
     align-items: center;
     color: #F2F2F2;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
 }
 
 .skill-bg {
     background-color: #F2F2F2;
-    width: 150px;
+    width: 140px;
     height: 10px;
     position: relative;
     border: 2px solid #F2F2F2;
