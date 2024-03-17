@@ -89,7 +89,7 @@ h3 {
 }
 
 h4 {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 150;
     font-family: 'M PLUS 1 Code', monospace;
     font-style: italic;
@@ -118,14 +118,14 @@ h5 {
 
 .header-bg-sidecol {
     background: linear-gradient(to left, #260801 0, #260801 150px, transparent 290px);
-    height: 25px;
+    height: 35px;
     width: 100%;
     position: relative;
     border-bottom-left-radius: 60%;
     border-top-right-radius: 30%;
     margin-right: 0;
-    margin-bottom: -8px;
-    margin-top: -8px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 .grad {
@@ -196,8 +196,16 @@ h5 {
 img {
     width: 30%;
     border-radius: 5px;
-    transform: scaleX(-1);
+    /* transform: scaleX(-1); */
     border: 1px solid #F2F2F2;
+}
+
+.links {
+    color: #F2F2F2;
+    padding-bottom: 10px;
+    line-height: 21px;
+    font-size: 28px;
+    font-family: 'M PLUS 1 Code', monospace;
 }
 
 .sideCol {
@@ -213,7 +221,7 @@ img {
     border-top-left-radius: 120px;
     top: 115px;
     bottom: 0;
-    padding-top: 300px;
+    padding-top: 230px;
     border-top: 2px solid #F2F2F2;
     border-left: 2px solid #F2F2F2;
     display: flex;
@@ -222,7 +230,6 @@ img {
 }
 
 .sideCol-header{
-    margin-bottom: -5px;
     color: #F2F2F2;
 }
 
@@ -251,7 +258,6 @@ img {
 
 .skills {
     width: 85%; 
-    padding-top: 5px;   
 }
 
 .skill {
@@ -259,15 +265,16 @@ img {
     justify-content: space-between;
     align-items: center;
     color: #F2F2F2;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .skill-bg {
     background-color: #F2F2F2;
     width: 140px;
-    height: 10px;
+    height: 15px;
     position: relative;
-    border: 2px solid #F2F2F2;
+    border: 3px solid #F2F2F2;
     border-radius: 20px;
     overflow: hidden;
 
@@ -284,10 +291,36 @@ img {
     color: #F2F2F2;
     font-weight: 500;
     font-style: italic;
-    font-size: 16px;
-    margin-bottom: 8px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 20px;
     font-family: 'M PLUS 1 Code', monospace;
     text-align: end;
+}
+
+.skills-list {
+    color: #F2F2F2;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 18px;
+    margin: 0;
+    margin-left: -20px;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
+.skills li::before {
+    content: "•";
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+#skills-header {
+    margin-bottom: -10px;
 }
 
 /* Color Theme Swatches in Hex */
