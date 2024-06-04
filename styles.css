@@ -1,3 +1,10 @@
+:root {
+    --color1: #2C3E50;
+    --color2: #C87909;
+    --color3: #777777d0;
+    --color4: #FFFFFC;
+}
+
 body {
     margin: 0;
     font-family: 'Source Sans 3';
@@ -7,7 +14,7 @@ body {
 }
 
 .full {
-    background: #F2F2F2;
+    background: var(--color4);
     width: 210mm;
     height: 297mm;
     margin: 0 auto;
@@ -18,7 +25,7 @@ body {
 }
 
 .header {
-    background: #260801;
+    background: var(--color1);
     height: 20%;
     z-index: 1;
     justify-content: start;
@@ -26,14 +33,14 @@ body {
 }
 
 .header-text {
-    color: #F2F2F2;
+    color: var(--color4);
     padding-left: 30px;
     margin-top: -10px;
 }
 
 .underline {
     height: 1px;
-    background: #F2F2F2;
+    background: var(--color4);
     width: 100%;
     position: absolute;
     top: 115px
@@ -41,7 +48,7 @@ body {
 
 .midline {
     width: 1px;
-    background: #F2F2F2;
+    background: var(--color4);
     position: absolute;
     left: 255px;
     top: 6px;
@@ -60,7 +67,7 @@ body {
 .footer {
     width: 700px;
     height: 205px;
-    background: #837773;
+    background: var(--color2);
     position: absolute;
     bottom: 0;
     z-index: -1;
@@ -99,11 +106,11 @@ h5 {
     margin-bottom: 0;
     margin-top: 10px;
     font-size: 14px;
-    color: #260801;
+    color: var(--color1);
 }
 
 .header-bg {
-    background: #516673c2;
+    background: var(--color3);
     height: 28px;
     width: 400px;
     position: relative;
@@ -113,11 +120,11 @@ h5 {
 }
 
 #education-bg {
-    background: #260801;
+    background: var(--color1);
 }
 
 .header-bg-sidecol {
-    background: linear-gradient(to left, #260801 0, #260801 150px, transparent 290px);
+    background: linear-gradient(to left, var(--color1) 0, var(--color1) 150px, transparent 290px);
     height: 35px;
     width: 100%;
     position: relative;
@@ -129,7 +136,7 @@ h5 {
 }
 
 .grad {
-    background: linear-gradient(to right, transparent 0px, transparent 250px, #F2F2F2 403px);
+    background: linear-gradient(to right, transparent 0px, transparent 250px, var(--color4) 403px);
     height: 35px;
     width: 403px;
     position: absolute;
@@ -137,14 +144,12 @@ h5 {
 }
 
 #education {
-    background: linear-gradient(to right, transparent 0px, transparent 250px, #837773 403px);
-  
-    
+    background: linear-gradient(to right, transparent 0px, transparent 250px, var(--color2) 403px);    
 }
 
 .body-header-text {
     display: flex;
-    color: #F2F2F2;
+    color: var(--color4);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -155,7 +160,7 @@ h5 {
 
 .body-header-text-sidecol {
     display: flex;
-    color: #F2F2F2;
+    color: var(--color4);
     position: absolute;
     width: 260px;
     height: 100%;
@@ -177,13 +182,14 @@ h5 {
 }
 
 .body {
-    /* background: #F2F2F2; */
+    /* background: var(--color4); */
     width: 100%;
     height: 100%;
     padding-top: 10px;
 }
 
 .imgBox {
+    object-fit: fill;
     position: absolute;
     z-index: 5;
     display: flex;
@@ -191,17 +197,21 @@ h5 {
     align-items: flex-start;
     margin-top: 50px;
     margin-right: 20px;
+    overflow: hidden;
+    max-height: 300px;
+    border-radius: 5px;
+    border: 1px solid var(--color4);
+    width: 230px;
+    left: 530px;
 }
 
 img {
-    width: 30%;
-    border-radius: 5px;
+    width: 100%;
     /* transform: scaleX(-1); */
-    border: 1px solid #F2F2F2;
 }
 
 .links {
-    color: #F2F2F2;
+    color: var(--color4);
     padding-bottom: 10px;
     line-height: 21px;
     font-size: 28px;
@@ -214,7 +224,7 @@ img {
 }
 
 .sideCol-content {
-    background: #516673c2;
+    background: var(--color3);
     position: absolute;
     width: 290px;
     z-index: 3;
@@ -222,15 +232,15 @@ img {
     top: 115px;
     bottom: 0;
     padding-top: 230px;
-    border-top: 2px solid #F2F2F2;
-    border-left: 2px solid #F2F2F2;
+    border-top: 2px solid var(--color4);
+    border-left: 2px solid var(--color4);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .sideCol-header{
-    color: #F2F2F2;
+    color: var(--color4);
 }
 
 .traits {
@@ -243,7 +253,7 @@ img {
     font-size: 14px;
     font-family: 'PT Sans';
     font-weight: 500;
-    color: #F2F2F2;
+    color: var(--color4);
     margin-left: -30px;
     margin-bottom: 5px;
 }
@@ -264,31 +274,31 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #F2F2F2;
+    color: var(--color4);
     margin-bottom: 10px;
     font-size: 16px;
 }
 
 .skill-bg {
-    background-color: #F2F2F2;
+    background-color: var(--color4);
     width: 140px;
     height: 15px;
     position: relative;
-    border: 3px solid #F2F2F2;
+    border: 3px solid var(--color4);
     border-radius: 20px;
     overflow: hidden;
 
 }
 
 .skill-fill {
-    background-color: #260801;
+    background-color: var(--color1);
     position: absolute;
     height: 100%;
     border-radius: 10px;
 }
 
 .skill-header {
-    color: #F2F2F2;
+    color: var(--color4);
     font-weight: 500;
     font-style: italic;
     font-size: 22px;
@@ -299,7 +309,7 @@ img {
 }
 
 .skills-list {
-    color: #F2F2F2;
+    color: var(--color4);
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -324,11 +334,11 @@ img {
 }
 
 /* Color Theme Swatches in Hex */
-.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-1-hex { color: #F2F2F2; }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-1-hex { color: var(--color4); }
 .Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-2-hex { color: #516673; }
 .Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-3-hex { color: #593527; }
 .Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-4-hex { color: #8C5C4A; }
-.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-5-hex { color: #260801; }
+.Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-5-hex { color: var(--color1); }
 
 /* Color Theme Swatches in RGBA */
 .Side-view-portrait-of-confident-lover-wearing-sexy-lingerie-1-rgba { color: rgba(242, 242, 242, 1); }
